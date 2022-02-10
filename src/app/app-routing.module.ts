@@ -19,6 +19,10 @@ const routes: Routes = [
         component: CourseComponent
     },
     {
+        path: "labo",
+        loadChildren: () => import('./labo/labo.module').then(m => m.LaboModule)
+    },
+    {
         path: "**",
         redirectTo: '/'
     }

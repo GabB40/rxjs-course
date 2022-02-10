@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mat-h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.mat-h2, .container > div, .container > button {
+    margin-top: 1rem;
+}
+
+.results {
+    display: flex;
+    align-self: flex-start;
+}
+
+.results>div {
+    margin-left: 1rem;
+}
+
+mat-list {
+    display: flex;
+}
+
+mat-divider {
+    margin: 2rem 0;
+}
+.request {
+    display: flex;
+    justify-content: center;
+}

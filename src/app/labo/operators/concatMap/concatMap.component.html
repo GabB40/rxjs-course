@@ -1,0 +1,35 @@
+<nav mat-tab-nav-bar mat-align-tabs="center">
+    <a mat-tab-link [active]="true" [routerLink]="'/labo/operators/concatMap'"> concatMap </a>
+    <a mat-tab-link [routerLink]="'/labo/operators/exhaustMap'"> exhaustMap </a>
+    <a mat-tab-link [routerLink]="'/labo/operators/mergeMap'"> mergeMap </a>
+    <a mat-tab-link [routerLink]="'/labo/operators/switchMap'"> switchMap </a>
+</nav>
+<!-- <mat-list>
+    <a mat-list-item routerLink="/labo/operators/concatMap"> concatMap </a>
+    <a mat-list-item routerLink="/labo/operators/exhaustMap"> exhaustMap </a>
+    <a mat-list-item routerLink="/labo/operators/mergeMap"> mergeMap </a>
+    <a mat-list-item routerLink="/labo/operators/switchMap"> switchMap </a>
+</mat-list>
+<mat-divider></mat-divider> -->
+
+<div class="container">
+    <h2 class="mat-h2 mat-title">concatMap</h2>
+    <button class="mat-raised-button mat-{{buttonClass[buttonClassIndex]}}" #button>
+        Click Me
+    </button>
+    <div>
+        {{ clickCount }}
+    </div>
+    <div class="results">
+        <div *ngFor="let result of results">{{ result }}</div>
+    </div>
+    <div *ngIf="results.length">
+        <button class="mat-raised-button" (click)="onReset()">Reset</button>
+    </div>
+</div>
+<mat-divider></mat-divider>
+<div class="request">
+    <button class="mat-raised-button mat-{{buttonClass[requestBtnClassIndex]}}" #requestBtn>
+        Send a request
+    </button>
+</div>
